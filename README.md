@@ -1,6 +1,6 @@
 # shop
 
-A new Flutter project.
+android app built using flutter and dart to implement some basic features of E-commerce shopping application.
 
 ## Getting Started
 
