@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:shop/screens/product-overview_screen.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
-
 }
 
 class MyApp extends StatefulWidget {
@@ -14,13 +14,12 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Center(child: Text("SHOP"),),
-        ),
-      ),
-
-      
+      title: "Shop",
+      theme: ThemeData(
+          primarySwatch: Colors.purple,
+          accentColor: Colors.deepOrange,
+          fontFamily: 'Lato'),
+      home: ProductOveviewScreen(),
     );
   }
 }
