@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop/screens/product-overview_screen.dart';
+import 'package:shop/screens/product_details_screen.dart';
 import './providers/products_provider.dart';
 import 'package:provider/provider.dart';
 void main() {
@@ -24,6 +25,9 @@ class _MyAppState extends State<MyApp> {
             accentColor: Colors.deepOrange,
             fontFamily: 'Lato'),
         home: ProductOveviewScreen(),
+        routes: {
+          ProductDetailsScreen.routeName: (ctx) => ProductDetailsScreen(),
+        }
 
       ),
     );
